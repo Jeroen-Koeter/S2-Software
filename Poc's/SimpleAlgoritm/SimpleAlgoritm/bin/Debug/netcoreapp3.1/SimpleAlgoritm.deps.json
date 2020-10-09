@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "SimpleAlgoritm/1.0.0": {
+        "runtime": {
+          "SimpleAlgoritm.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SimpleAlgoritm/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
