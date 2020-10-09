@@ -80,10 +80,8 @@ namespace GameHub
                 isPressed = false;
             }
         }
-
-        private void Timer1_Tick(object sender, EventArgs e)
+        private void PlayerMovement() 
         {
-            // player movement:
             if (goleft)
             {
                 if (player.Left > 0)
@@ -106,7 +104,10 @@ namespace GameHub
                     player.Left = ClientRectangle.Width - player.Size.Width;
                 }
             }
-            // invader movement:
+        }
+
+        private void InvaderMovement() 
+        {
             foreach (Control x in this.Controls)
             {
                 if (x is PictureBox && (x.Tag == nameInvaderLeft || x.Tag == nameInvaderRight))
@@ -114,7 +115,7 @@ namespace GameHub
                     PictureBox a = (PictureBox)x;
                     if (a.Bounds.IntersectsWith(player.Bounds))
                     {
-                        label1.Text = "Game Over";
+                        ScoreLabel.Text = "Game Over";
                         GameOver();
                     }
                     if (a.Tag == nameInvaderLeft)
@@ -149,7 +150,9 @@ namespace GameHub
                     }
                 }
             }
-            // bullet movement:
+        }
+        private void BulletMovement() 
+        {
             foreach (Control shot in this.Controls)
             {
                 if (shot is PictureBox && shot.Tag == nameBullet)
@@ -161,7 +164,9 @@ namespace GameHub
                     }
                 }
             }
-            // bullet alien collision:
+        }
+        private void BulletAlienCollision() 
+        {
             foreach (Control invader in this.Controls)
             {
                 foreach (Control bullets in this.Controls)
@@ -180,13 +185,23 @@ namespace GameHub
                     }
                 }
             }
-            // updating label:
-            label1.Text = "Score : " + score;
+        }
+        private void UpdateScoreLabel() 
+        {
+            ScoreLabel.Text = "Score : " + score;
             if (score == totalEnemies)
             {
-                label1.Text = "You Win!!!!";
+                ScoreLabel.Text = "You Win!!!!";
                 GameOver();
             }
+        }
+        private void Timer1_Tick(object sender, EventArgs e)
+        {
+            PlayerMovement();
+            InvaderMovement();
+            BulletMovement();
+            BulletAlienCollision();
+            UpdateScoreLabel();        
         }
         private void MakeBullet()
         {
@@ -210,7 +225,7 @@ namespace GameHub
         private void SpawnResetButton()
         {
             Button resetButton = new Button();
-            if (label1.Text == "Game Over")
+            if (ScoreLabel.Text == "Game Over")
             {
                 resetButton.Text = "retry";
             }
@@ -233,7 +248,7 @@ namespace GameHub
             if (resetButton.Text == "retry")
             {
                 totalEnemies = 0;
-                label1.Text = "";
+                ScoreLabel.Text = "";
                 score = 0;
                 speed = 5;
                 int invadercounter = 0;
@@ -250,7 +265,7 @@ namespace GameHub
             else
             {
                 x = 568;
-                label1.Text = "Score: " + score;
+                ScoreLabel.Text = "Score: " + score;
                 speed += 3;
 
                 Alien alien = new Alien(5, "alien");
