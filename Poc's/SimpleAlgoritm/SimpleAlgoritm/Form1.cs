@@ -12,8 +12,7 @@ namespace SimpleAlgoritm
 {
     public partial class Form1 : Form
     {
-        private List<double> prijsLijst = new List<double>();
-        private List<string> productenLijst = new List<string>();
+        private List<Product> ProductenLijst = new List<Product>();
         public Form1()
         {
             InitializeComponent();
@@ -30,9 +29,10 @@ namespace SimpleAlgoritm
             {
                 if (!(string.IsNullOrEmpty(prijsTextBox.Text)))
                 {
-                    bonTextBox.Text += productTextBox.Text + " €" + prijsTextBox.Text + "\r\n";
-                    prijsLijst = MakePrijsList(double.Parse(prijsTextBox.Text));
-                    productenLijst = MakeProductenList(productTextBox.Text);
+                    Product product = new Product(double.Parse(prijsTextBox.Text), productTextBox.Text);
+                    ProductenLijst.Add(product);
+                    bonTextBox.Text += productTextBox.Text + " €" + prijsTextBox.Text +  "\r\n";
+
                 }
             }
         }
@@ -63,44 +63,16 @@ namespace SimpleAlgoritm
         }
         private void GiveMaximumPrice()
         {
-            double prijsTemp;
-            double[] prijsArray = prijsLijst.ToArray();
-            foreach (var item in prijsLijst)
+            Product productTemp;
+            Product[] productenArray = ProductenLijst.ToArray();
+            foreach (var item in ProductenLijst)
             {
-                for (int i = 0; i <= prijsArray.Length - 1; i++)
+                for (int i = 0; i <= productenArray.Length - 1; i++)
                 {
-                    for (int j = i + 1; j < prijsArray.Length; j++)
+                    for (int j = i + 1; j < productenArray.Length; j++)
                     {
-                        if (prijsArray[i] < prijsArray[j])
+                        if (productenArray[i].prijs < productenArray[j].prijs)
                         {
-                            prijsTemp = prijsArray[i];
-                            prijsArray[i] = prijsArray[j];
-                            prijsArray[j] = prijsTemp;
-                        }
-                    }
-                }
-            }
-            string prijsString = prijsArray[0].ToString("0.00");
-            maxLabel.Text ="De hoogste prijs is €" + prijsString;
-        }
-        private void SortProductsByPrice()
-        {
-            bonTextBox.Text = "";
-            double prijsTemp;
-            string productTemp;
-            double[] prijsArray = prijsLijst.ToArray();
-            string[] productenArray = productenLijst.ToArray();
-            foreach (var item in prijsLijst)
-            {
-                for (int i = 0; i <= prijsArray.Length - 1; i++)
-                {
-                    for (int j = i + 1; j < prijsArray.Length; j++)
-                    {
-                        if (prijsArray[i] > prijsArray[j])
-                        {
-                            prijsTemp = prijsArray[i];
-                            prijsArray[i] = prijsArray[j];
-                            prijsArray[j] = prijsTemp;
                             productTemp = productenArray[i];
                             productenArray[i] = productenArray[j];
                             productenArray[j] = productTemp;
@@ -108,41 +80,60 @@ namespace SimpleAlgoritm
                     }
                 }
             }
-            for (int i = 0; i <= prijsArray.Length - 1; i++)
+            maxLabel.Text = "De hoogste prijs is €" + productenArray[0].prijs;
+        }
+        private void SortProductsByPrice()
+        {
+            bonTextBox.Text = "";
+            Product productTemp;
+            Product[] productenArray = ProductenLijst.ToArray();
+            foreach (var item in ProductenLijst)
             {
-                string prijsString = prijsArray[i].ToString("0.00");
-                string productString = productenArray[i].ToString();
-                bonTextBox.Text += productString + " €" + prijsString + "\r\n";
+                for (int i = 0; i <= productenArray.Length - 1; i++)
+                {
+                    for (int j = i + 1; j < productenArray.Length; j++)
+                    {
+                        if (productenArray[i].prijs > productenArray[j].prijs)
+                        {
+                            productTemp = productenArray[i];
+                            productenArray[i] = productenArray[j];
+                            productenArray[j] = productTemp;
+                        }
+                    }
+                }
+            }
+            for (int i = 0; i <= productenArray.Length - 1; i++)
+            {
+                Product productString = productenArray[i];
+                bonTextBox.Text += productString.naam + " €" + productString.prijs + "\r\n";
             }
         }
         private void GiveAvaragePrice()
         {
             double totalePrijs = 0;
             double gemiddeldePrijs;
-            for (int i = 0; i < prijsLijst.Count; i++)
+            for (int i = 0; i < ProductenLijst.Count; i++)
             {
-                double prijs1 = prijsLijst[i];
+                double prijs1 = ProductenLijst[i].prijs;
                 totalePrijs += prijs1;
             }
-            gemiddeldePrijs = totalePrijs / prijsLijst.Count;
+            gemiddeldePrijs = totalePrijs / ProductenLijst.Count;
             averageLabel.Text = "Gemiddelde prijs per product: €" + gemiddeldePrijs;
         }
         private void GetAllProducts()
-        {           
-                bonTextBox.Text = "";
-                string prijs = getAllTextBox.Text;
-                double prijsDouble = double.Parse(prijs);
-                double[] prijsArray = prijsLijst.ToArray();
-                string[] productenArray = productenLijst.ToArray();
-                for (int i = 0; i <= prijsArray.Length - 1; i++)
+        {
+            bonTextBox.Text = "";
+            string prijs = getAllTextBox.Text;
+            double prijsDouble = double.Parse(prijs);
+            Product[] productenArray = ProductenLijst.ToArray();
+            for (int i = 0; i <= productenArray.Length - 1; i++)
+            {
+                if (productenArray[i].prijs == prijsDouble)
                 {
-                    if (prijsArray[i] == prijsDouble)
-                    {
-                        string prijsString = prijsArray[i].ToString("0.00");
-                        string productString = productenArray[i].ToString();
-                        bonTextBox.Text += productString + " €" + prijsString + "\r\n";
-                    }
+                    Product productString = productenArray[i];
+                    bonTextBox.Text += productString.naam + " €" + productString.prijs + "\r\n";
                 }
+            }
         }
 
 
@@ -176,17 +167,6 @@ namespace SimpleAlgoritm
             {
                 GetAllProducts();
             }
-        }
-
-        private List<double> MakePrijsList(double price)
-        {
-            prijsLijst.Add(price);
-            return prijsLijst;
-        }
-        private List<string> MakeProductenList(string product)
-        {
-            productenLijst.Add(product);
-            return productenLijst;
         }
     }
 }

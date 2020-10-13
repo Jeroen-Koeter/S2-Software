@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jeroe\\Desktop\\POC's\\SimpleAlgoritm\\SimpleAlgoritm\\SimpleAlgoritm.csproj",
+      "projectUniqueName": "C:\\Users\\jeroe\\Desktop\\S2-Software\\Poc's\\SimpleAlgoritm\\SimpleAlgoritm\\SimpleAlgoritm.csproj",
       "projectName": "SimpleAlgoritm",
-      "projectPath": "C:\\Users\\jeroe\\Desktop\\POC's\\SimpleAlgoritm\\SimpleAlgoritm\\SimpleAlgoritm.csproj",
+      "projectPath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\Poc's\\SimpleAlgoritm\\SimpleAlgoritm\\SimpleAlgoritm.csproj",
       "packagesPath": "C:\\Users\\jeroe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jeroe\\Desktop\\POC's\\SimpleAlgoritm\\SimpleAlgoritm\\obj\\",
+      "outputPath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\Poc's\\SimpleAlgoritm\\SimpleAlgoritm\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
