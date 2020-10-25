@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+// mogelijk 3 lagen structuur
 namespace SimpleAlgoritm
 {
     public partial class Form1 : Form
@@ -23,7 +23,7 @@ namespace SimpleAlgoritm
 
         }
 
-        private void addProductButton_Click(object sender, EventArgs e)
+        private void AddProductButton_Click(object sender, EventArgs e)
         {
             if (!(string.IsNullOrEmpty(productTextBox.Text)))
             {
@@ -31,8 +31,7 @@ namespace SimpleAlgoritm
                 {
                     Product product = new Product(double.Parse(prijsTextBox.Text), productTextBox.Text);
                     ProductenLijst.Add(product);
-                    bonTextBox.Text += productTextBox.Text + " €" + prijsTextBox.Text +  "\r\n";
-
+                    bonTextBox.Text += productTextBox.Text + " €" + prijsTextBox.Text + Environment.NewLine;
                 }
             }
         }

@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+// mogelijk ombouwen naar 3 lagen 
 namespace GameHub
 {
     public partial class Form1 : Form
@@ -171,7 +171,7 @@ namespace GameHub
             {
                 foreach (Control bullets in this.Controls)
                 {
-                    if (invader is PictureBox && (invader.Tag == nameInvaderLeft || invader.Tag == nameInvaderRight))
+                    if (invader is PictureBox && (invader.Tag.ToString() == nameInvaderLeft || invader.Tag == nameInvaderRight))
                     {
                         if (bullets is PictureBox && bullets.Tag == nameBullet)
                         {

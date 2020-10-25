@@ -106,7 +106,7 @@ namespace SimpleAlgoritm
             this.addProductButton.TabIndex = 6;
             this.addProductButton.Text = "Product toevoegen";
             this.addProductButton.UseVisualStyleBackColor = true;
-            this.addProductButton.Click += new System.EventHandler(this.addProductButton_Click);
+            this.addProductButton.Click += new System.EventHandler(this.AddProductButton_Click);
             // 
             // maxButton
             // 

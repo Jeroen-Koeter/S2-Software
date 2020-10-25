@@ -1,0 +1,10 @@
+C:\Users\jeroe\Desktop\week1-poc-eurodollarconv\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\jeroe\Desktop\week1-poc-eurodollarconv\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\jeroe\Desktop\week1-poc-eurodollarconv\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\jeroe\Desktop\week1-poc-eurodollarconv\WindowsFormsApp1\obj\Debug\week1-poc-calculator.csprojAssemblyReference.cache
+C:\Users\jeroe\Desktop\week1-poc-eurodollarconv\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\jeroe\Desktop\week1-poc-eurodollarconv\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\jeroe\Desktop\week1-poc-eurodollarconv\WindowsFormsApp1\obj\Debug\week1-poc-calculator.csproj.GenerateResource.cache
+C:\Users\jeroe\Desktop\week1-poc-eurodollarconv\WindowsFormsApp1\obj\Debug\week1-poc-calculator.csproj.CoreCompileInputs.cache
+C:\Users\jeroe\Desktop\week1-poc-eurodollarconv\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\jeroe\Desktop\week1-poc-eurodollarconv\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
