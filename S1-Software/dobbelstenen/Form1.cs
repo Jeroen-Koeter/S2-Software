@@ -112,7 +112,8 @@ namespace dobbelstenen
                 sum += hoeveelheid;
             }
             int gemiddeld = sum / loopTimes.Value;
-            average.Text += gemiddeld.ToString();
+            average.Text = "";
+            average.Text ="gemiddelde " + gemiddeld.ToString();
         }
 
         private void MaxMin_Click(object sender, EventArgs e)

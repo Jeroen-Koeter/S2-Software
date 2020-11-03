@@ -8,3 +8,13 @@ C:\Users\jeroe\Desktop\week1-poc-eurodollarconv\dobbelstenen\bin\Debug\dobbelste
 C:\Users\jeroe\Desktop\week1-poc-eurodollarconv\dobbelstenen\bin\Debug\dobbelstenen.pdb
 C:\Users\jeroe\Desktop\week1-poc-eurodollarconv\dobbelstenen\obj\Debug\dobbelstenen.exe
 C:\Users\jeroe\Desktop\week1-poc-eurodollarconv\dobbelstenen\obj\Debug\dobbelstenen.pdb
+C:\Users\jeroe\Desktop\S2-Software\S1-Software\dobbelstenen\bin\Debug\dobbelstenen.exe.config
+C:\Users\jeroe\Desktop\S2-Software\S1-Software\dobbelstenen\bin\Debug\dobbelstenen.exe
+C:\Users\jeroe\Desktop\S2-Software\S1-Software\dobbelstenen\bin\Debug\dobbelstenen.pdb
+C:\Users\jeroe\Desktop\S2-Software\S1-Software\dobbelstenen\obj\Debug\dobbelstenen.csprojAssemblyReference.cache
+C:\Users\jeroe\Desktop\S2-Software\S1-Software\dobbelstenen\obj\Debug\dobbelstenen.Form1.resources
+C:\Users\jeroe\Desktop\S2-Software\S1-Software\dobbelstenen\obj\Debug\dobbelstenen.Properties.Resources.resources
+C:\Users\jeroe\Desktop\S2-Software\S1-Software\dobbelstenen\obj\Debug\dobbelstenen.csproj.GenerateResource.cache
+C:\Users\jeroe\Desktop\S2-Software\S1-Software\dobbelstenen\obj\Debug\dobbelstenen.csproj.CoreCompileInputs.cache
+C:\Users\jeroe\Desktop\S2-Software\S1-Software\dobbelstenen\obj\Debug\dobbelstenen.exe
+C:\Users\jeroe\Desktop\S2-Software\S1-Software\dobbelstenen\obj\Debug\dobbelstenen.pdb
