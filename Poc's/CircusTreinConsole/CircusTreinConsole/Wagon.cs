@@ -10,12 +10,16 @@ namespace CircusTreinConsole
         public int Grote { get; private set; }
         public int HuidigeGrote { get;  set; }
         public string Naam { get; private set; }
-        public List<Dier> DierenInWagon { get; private set; }
 
+        private List<Dier> dierenInWagon;
+
+        public IEnumerable<Dier> Dieren => dierenInWagon;
+       
+     
         public Wagon(int nummer)
         {
             this.Naam = "Wagon: " + nummer;
-            DierenInWagon = new List<Dier>();
+            dierenInWagon = new List<Dier>();
             Grote = 10;
             HuidigeGrote = 0;
         }
@@ -23,7 +27,7 @@ namespace CircusTreinConsole
         public void addDierAanWagon(Dier dier) 
         {
             HuidigeGrote += (int)dier.size;
-            DierenInWagon.Add(dier);
+            dierenInWagon.Add(dier);
         }
     }
 }

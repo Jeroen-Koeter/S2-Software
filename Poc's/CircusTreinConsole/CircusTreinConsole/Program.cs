@@ -1,8 +1,6 @@
 ﻿using CircusTrein;
 using System;
 using System.Collections.Generic;
-using System.Dynamic;
-using System.Runtime.Serialization.Json;
 
 namespace CircusTreinConsole
 {
@@ -55,8 +53,8 @@ namespace CircusTreinConsole
         static void RunAlgoritme(List<Dier> dieren)
         {
             int wagonCounter = 1;
-            List<Wagon> WagonLijstIncompleet = new List<Wagon>();
-            List<Wagon> WagonLijstCompleet = new List<Wagon>();
+            List<Wagon> wagonLijstIncompleet = new List<Wagon>();
+            List<Wagon> wagonLijstCompleet = new List<Wagon>();
 
             List<Dier> dierenTemp = new List<Dier>();
             //Iedere carnivoor een wagon geven
@@ -69,11 +67,11 @@ namespace CircusTreinConsole
                     {
                         case Dier.Grote.groot:
                             wagon.addDierAanWagon(dier);
-                            WagonLijstCompleet.Add(wagon);
+                            wagonLijstCompleet.Add(wagon);
                             break;
                         default:
                             wagon.addDierAanWagon(dier);
-                            WagonLijstIncompleet.Add(wagon);
+                            wagonLijstIncompleet.Add(wagon);
                             break;
                     }
                 }
@@ -95,13 +93,13 @@ namespace CircusTreinConsole
                 if (dier.size == Dier.Grote.groot)
                 {
                     bool dierToegevoegd = false;
-                    foreach (Wagon wagon in WagonLijstIncompleet)
+                    foreach (Wagon wagon in wagonLijstIncompleet)
                     {
                         if (wagon.HuidigeGrote == 3) //is dit een wagon met een middel carnivoor?
                         {
                             wagon.addDierAanWagon(dier);
-                            WagonLijstCompleet.Add(wagon);
-                            WagonLijstIncompleet.Remove(wagon);
+                            wagonLijstCompleet.Add(wagon);
+                            wagonLijstIncompleet.Remove(wagon);
                             dierToegevoegd = true;
                             break;
                         }
@@ -125,21 +123,21 @@ namespace CircusTreinConsole
 
             //alle overige wagons met middel carnivoren naar de complete lijst zetten
             List<Wagon> wagonTemp = new List<Wagon>();
-            foreach (Wagon wagon in WagonLijstIncompleet)
+            foreach (Wagon wagon in wagonLijstIncompleet)
             {
                 if (wagon.HuidigeGrote == 3)
                 {
-                    WagonLijstCompleet.Add(wagon);
+                    wagonLijstCompleet.Add(wagon);
                 }
                 else
                 {
                     wagonTemp.Add(wagon);
                 }
             }
-            WagonLijstIncompleet.Clear();
+            wagonLijstIncompleet.Clear();
             foreach (Wagon wagon in wagonTemp)
             {
-                WagonLijstIncompleet.Add(wagon);
+                wagonLijstIncompleet.Add(wagon);
             }
             wagonTemp.Clear();
 
@@ -149,7 +147,7 @@ namespace CircusTreinConsole
                 if (dier.size == Dier.Grote.groot)
                 {
                     bool dierToegevoegd = false;
-                    foreach (Wagon wagon in WagonLijstIncompleet)
+                    foreach (Wagon wagon in wagonLijstIncompleet)
                     {
                         if (wagon.HuidigeGrote == 1) //is dit een wagon met alleen 1 kleine carnivoor?
                         {
@@ -181,13 +179,13 @@ namespace CircusTreinConsole
                 if (dier.size == Dier.Grote.middel)
                 {
                     bool dierToegevoegd = false;
-                    foreach (Wagon wagon in WagonLijstIncompleet)
+                    foreach (Wagon wagon in wagonLijstIncompleet)
                     {
                         if (wagon.HuidigeGrote <= 7) //kan er nog een middel herbivoor bij
                         {
                             wagon.addDierAanWagon(dier);
-                            WagonLijstCompleet.Add(wagon);
-                            WagonLijstIncompleet.Remove(wagon);
+                            wagonLijstCompleet.Add(wagon);
+                            wagonLijstIncompleet.Remove(wagon);
                             dierToegevoegd = true;
                             break;
                         }
@@ -217,11 +215,11 @@ namespace CircusTreinConsole
             //overige herbivoren zo efficient opdelen over wagons
             foreach (Dier dier in dieren)
             {
-                if (WagonLijstIncompleet.Count == 0)
+                if (wagonLijstIncompleet.Count == 0)
                 {
-                    WagonLijstIncompleet.Add( new Wagon(wagonCounter++));
+                    wagonLijstIncompleet.Add( new Wagon(wagonCounter++));
                 }
-                foreach (Wagon wagon in WagonLijstIncompleet)
+                foreach (Wagon wagon in wagonLijstIncompleet)
                 {
                     if ((wagon.HuidigeGrote + (int)dier.size) <= 10) //is er plek voor een grote herbivoor?
                     {
@@ -230,17 +228,17 @@ namespace CircusTreinConsole
                     }
                 }
             }
-            foreach (Wagon wagon in WagonLijstIncompleet)
+            foreach (Wagon wagon in wagonLijstIncompleet)
             {
-                WagonLijstCompleet.Add(wagon);
+                wagonLijstCompleet.Add(wagon);
             }
 
 
             // Print trein in console
-            foreach (Wagon wagon in WagonLijstCompleet)
+            foreach (Wagon wagon in wagonLijstCompleet)
             {
                 Console.WriteLine(wagon.Naam + " - Gewicht: " + wagon.HuidigeGrote);
-                foreach (Dier dier in wagon.DierenInWagon)
+                foreach (Dier dier in wagon.GetDierenInWagon())
                 {
                     Console.WriteLine("    " + dier.naam);
                 }
