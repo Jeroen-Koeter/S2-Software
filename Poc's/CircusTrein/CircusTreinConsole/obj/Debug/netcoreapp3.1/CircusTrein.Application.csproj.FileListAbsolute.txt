@@ -1,0 +1,9 @@
+C:\Users\jeroe\Desktop\S2-Software\Poc's\CircusTreinConsole\CircusTreinConsole\bin\Debug\netcoreapp3.1\CircusTrein.Application.deps.json
+C:\Users\jeroe\Desktop\S2-Software\Poc's\CircusTreinConsole\CircusTreinConsole\bin\Debug\netcoreapp3.1\CircusTrein.Application.dll
+C:\Users\jeroe\Desktop\S2-Software\Poc's\CircusTreinConsole\CircusTreinConsole\bin\Debug\netcoreapp3.1\CircusTrein.Application.pdb
+C:\Users\jeroe\Desktop\S2-Software\Poc's\CircusTreinConsole\CircusTreinConsole\obj\Debug\netcoreapp3.1\CircusTrein.Application.csprojAssemblyReference.cache
+C:\Users\jeroe\Desktop\S2-Software\Poc's\CircusTreinConsole\CircusTreinConsole\obj\Debug\netcoreapp3.1\CircusTrein.Application.AssemblyInfoInputs.cache
+C:\Users\jeroe\Desktop\S2-Software\Poc's\CircusTreinConsole\CircusTreinConsole\obj\Debug\netcoreapp3.1\CircusTrein.Application.AssemblyInfo.cs
+C:\Users\jeroe\Desktop\S2-Software\Poc's\CircusTreinConsole\CircusTreinConsole\obj\Debug\netcoreapp3.1\CircusTrein.Application.csproj.CoreCompileInputs.cache
+C:\Users\jeroe\Desktop\S2-Software\Poc's\CircusTreinConsole\CircusTreinConsole\obj\Debug\netcoreapp3.1\CircusTrein.Application.dll
+C:\Users\jeroe\Desktop\S2-Software\Poc's\CircusTreinConsole\CircusTreinConsole\obj\Debug\netcoreapp3.1\CircusTrein.Application.pdb
