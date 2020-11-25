@@ -5749,19 +5749,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jeroe\\.nuget\\packages\\": {}
+    "C:\\Users\\Jeroen\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jeroe\\Desktop\\S2-Software\\Poc's\\CircusTrein\\CircusTrein.ViewWinForm\\CircusTrein.ViewWinForm.csproj",
+      "projectUniqueName": "C:\\Users\\Jeroen\\Desktop\\S2-Software\\Poc's\\CircusTrein\\CircusTrein.ViewWinForm\\CircusTrein.ViewWinForm.csproj",
       "projectName": "CircusTrein.ViewWinForm",
-      "projectPath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\Poc's\\CircusTrein\\CircusTrein.ViewWinForm\\CircusTrein.ViewWinForm.csproj",
-      "packagesPath": "C:\\Users\\jeroe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\Poc's\\CircusTrein\\CircusTrein.ViewWinForm\\obj\\",
+      "projectPath": "C:\\Users\\Jeroen\\Desktop\\S2-Software\\Poc's\\CircusTrein\\CircusTrein.ViewWinForm\\CircusTrein.ViewWinForm.csproj",
+      "packagesPath": "C:\\Users\\Jeroen\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Jeroen\\Desktop\\S2-Software\\Poc's\\CircusTrein\\CircusTrein.ViewWinForm\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jeroe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Jeroen\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5773,12 +5773,13 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\jeroe\\Desktop\\S2-Software\\Poc's\\CircusTrein\\CircusTrein.ApplicationTests\\CircusTrein.ApplicationTests.csproj": {
-              "projectPath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\Poc's\\CircusTrein\\CircusTrein.ApplicationTests\\CircusTrein.ApplicationTests.csproj"
+            "C:\\Users\\Jeroen\\Desktop\\S2-Software\\Poc's\\CircusTrein\\CircusTrein.ApplicationTests\\CircusTrein.ApplicationTests.csproj": {
+              "projectPath": "C:\\Users\\Jeroen\\Desktop\\S2-Software\\Poc's\\CircusTrein\\CircusTrein.ApplicationTests\\CircusTrein.ApplicationTests.csproj"
             },
-            "C:\\Users\\jeroe\\Desktop\\S2-Software\\Poc's\\CircusTrein\\CircusTreinConsole\\CircusTrein.Application.csproj": {
-              "projectPath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\Poc's\\CircusTrein\\CircusTreinConsole\\CircusTrein.Application.csproj"
+            "C:\\Users\\Jeroen\\Desktop\\S2-Software\\Poc's\\CircusTrein\\CircusTreinConsole\\CircusTrein.Application.csproj": {
+              "projectPath": "C:\\Users\\Jeroen\\Desktop\\S2-Software\\Poc's\\CircusTrein\\CircusTreinConsole\\CircusTrein.Application.csproj"
             }
           }
         }
@@ -5791,6 +5792,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",
@@ -5809,7 +5811,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
