@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\jeroe\\.nuget\\packages\\": {}
+    "C:\\Users\\Jeroen\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jeroe\\Desktop\\S2-Software\\Poc's\\CircusTrein\\CircusTreinConsole\\CircusTrein.Application.csproj",
+      "projectUniqueName": "C:\\Users\\Jeroen\\Desktop\\S2-Software\\Poc's\\CircusTrein\\CircusTreinConsole\\CircusTrein.Application.csproj",
       "projectName": "CircusTrein.Application",
-      "projectPath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\Poc's\\CircusTrein\\CircusTreinConsole\\CircusTrein.Application.csproj",
-      "packagesPath": "C:\\Users\\jeroe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\Poc's\\CircusTrein\\CircusTreinConsole\\obj\\",
+      "projectPath": "C:\\Users\\Jeroen\\Desktop\\S2-Software\\Poc's\\CircusTrein\\CircusTreinConsole\\CircusTrein.Application.csproj",
+      "packagesPath": "C:\\Users\\Jeroen\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Jeroen\\Desktop\\S2-Software\\Poc's\\CircusTrein\\CircusTreinConsole\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jeroe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Jeroen\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

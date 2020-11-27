@@ -1,8 +1,12 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "BhCZcMIRzk6eq+D942zZmjRNQtv6Yqqpg2qAiSgAaEgYpM+jgT4ZOlJ7D1TyEfSHNCKh5L+dljeJA0H5v6qv7g==",
+=======
+  "dgSpecHash": "nrkth84yWRA3yXEyKETW/OQY+2RZ8jy+zOW9OHpQadCT9T9RSy+TxjX5o5VtZNwOK9czLlfTqyeYaGHD3adyow==",
+>>>>>>> 8470870805f661e1bf030caadebdeb25d1418fc5
   "success": true,
-  "projectFilePath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\Poc's\\CircusTrein\\CircusTreinConsole\\CircusTrein.Application.csproj",
+  "projectFilePath": "C:\\Users\\Jeroen\\Desktop\\S2-Software\\Poc's\\CircusTrein\\CircusTreinConsole\\CircusTrein.Application.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

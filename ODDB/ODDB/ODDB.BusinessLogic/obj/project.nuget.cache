@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "BxBYZSVW0g2A+9dQmMUPMF/Ab+FbeXLQPvX1u246IbvfHHwhBRsIeayyNr6lh+MnzDeybUxrXSJ4m7I2KGFfOA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Jeroen\\source\\repos\\ODDB\\ODDB.BusinessLogic\\ODDB.BusinessLogic.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Jeroen\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Jeroen\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
