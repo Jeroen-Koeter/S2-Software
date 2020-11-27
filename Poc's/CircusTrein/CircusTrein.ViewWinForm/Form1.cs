@@ -21,7 +21,7 @@ namespace CircusTrein.ViewWinForm
 
         private void CreateAnimalButton_Click(object sender, EventArgs e)
         {
-            string naam = NameTextBox.Text; m  
+            string naam = NameTextBox.Text;   
             string dieet = DietTextBox.Text;
             string grote = SizeTextBox.Text;
             dieren.Add(Algoritme.AddAnimal(naam, dieet, grote));
