@@ -10,6 +10,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.0.22" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\ODDB.Core.Repository\ODDB.Core.Repository.csproj" />
     <ProjectReference Include="..\ODDB.Repository\ODDB.Repository.csproj" />
   </ItemGroup>

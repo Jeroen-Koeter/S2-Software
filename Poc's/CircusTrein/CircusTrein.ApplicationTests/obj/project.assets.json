@@ -5732,19 +5732,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jeroen\\.nuget\\packages\\": {}
+    "C:\\Users\\jeroe\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jeroen\\Desktop\\S2-Software\\Poc's\\CircusTrein\\CircusTrein.ApplicationTests\\CircusTrein.ApplicationTests.csproj",
+      "projectUniqueName": "C:\\Users\\jeroe\\Desktop\\S2-Software\\Poc's\\CircusTrein\\CircusTrein.ApplicationTests\\CircusTrein.ApplicationTests.csproj",
       "projectName": "CircusTrein.ApplicationTests",
-      "projectPath": "C:\\Users\\Jeroen\\Desktop\\S2-Software\\Poc's\\CircusTrein\\CircusTrein.ApplicationTests\\CircusTrein.ApplicationTests.csproj",
-      "packagesPath": "C:\\Users\\Jeroen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jeroen\\Desktop\\S2-Software\\Poc's\\CircusTrein\\CircusTrein.ApplicationTests\\obj\\",
+      "projectPath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\Poc's\\CircusTrein\\CircusTrein.ApplicationTests\\CircusTrein.ApplicationTests.csproj",
+      "packagesPath": "C:\\Users\\jeroe\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\Poc's\\CircusTrein\\CircusTrein.ApplicationTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Jeroen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jeroe\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5758,8 +5758,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Jeroen\\Desktop\\S2-Software\\Poc's\\CircusTrein\\CircusTreinConsole\\CircusTrein.Application.csproj": {
-              "projectPath": "C:\\Users\\Jeroen\\Desktop\\S2-Software\\Poc's\\CircusTrein\\CircusTreinConsole\\CircusTrein.Application.csproj"
+            "C:\\Users\\jeroe\\Desktop\\S2-Software\\Poc's\\CircusTrein\\CircusTreinConsole\\CircusTrein.Application.csproj": {
+              "projectPath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\Poc's\\CircusTrein\\CircusTreinConsole\\CircusTrein.Application.csproj"
             }
           }
         }
@@ -5809,5 +5809,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\jeroe\\Desktop\\S2-Software\\Poc's\\CircusTrein\\CircusTrein.ApplicationTests\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

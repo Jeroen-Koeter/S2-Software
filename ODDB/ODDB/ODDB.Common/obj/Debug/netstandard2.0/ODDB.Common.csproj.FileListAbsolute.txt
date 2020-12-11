@@ -1,0 +1,9 @@
+C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB.Common\obj\Debug\netstandard2.0\ODDB.Common.csprojAssemblyReference.cache
+C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB.Common\obj\Debug\netstandard2.0\ODDB.Common.AssemblyInfoInputs.cache
+C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB.Common\obj\Debug\netstandard2.0\ODDB.Common.AssemblyInfo.cs
+C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB.Common\obj\Debug\netstandard2.0\ODDB.Common.csproj.CoreCompileInputs.cache
+C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB.Common\bin\Debug\netstandard2.0\ODDB.Common.deps.json
+C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB.Common\bin\Debug\netstandard2.0\ODDB.Common.dll
+C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB.Common\bin\Debug\netstandard2.0\ODDB.Common.pdb
+C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB.Common\obj\Debug\netstandard2.0\ODDB.Common.dll
+C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB.Common\obj\Debug\netstandard2.0\ODDB.Common.pdb

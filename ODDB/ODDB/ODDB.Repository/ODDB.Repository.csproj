@@ -10,9 +10,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DBcontext\" />
     <Folder Include="Entities\" />
     <Folder Include="Interfaces\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.0.22" />
   </ItemGroup>
 
 </Project>

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jeroen\\source\\repos\\ODDB\\RepositoryTest\\RepositoryTest.csproj": {}
+    "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\RepositoryTest\\RepositoryTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jeroen\\source\\repos\\ODDB\\RepositoryTest\\RepositoryTest.csproj": {
+    "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\RepositoryTest\\RepositoryTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jeroen\\source\\repos\\ODDB\\RepositoryTest\\RepositoryTest.csproj",
+        "projectUniqueName": "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\RepositoryTest\\RepositoryTest.csproj",
         "projectName": "RepositoryTest",
-        "projectPath": "C:\\Users\\Jeroen\\source\\repos\\ODDB\\RepositoryTest\\RepositoryTest.csproj",
-        "packagesPath": "C:\\Users\\Jeroen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jeroen\\source\\repos\\ODDB\\RepositoryTest\\obj\\",
+        "projectPath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\RepositoryTest\\RepositoryTest.csproj",
+        "packagesPath": "C:\\Users\\jeroe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\RepositoryTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Jeroen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jeroe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -51,6 +51,10 @@
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.7.1, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.22, )"
             },
             "coverlet.collector": {
               "target": "Package",

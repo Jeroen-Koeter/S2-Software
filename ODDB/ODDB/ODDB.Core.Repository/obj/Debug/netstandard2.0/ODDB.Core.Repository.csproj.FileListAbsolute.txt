@@ -1,0 +1,9 @@
+C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB.Core.Repository\bin\Debug\netstandard2.0\ODDB.Core.Repository.deps.json
+C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB.Core.Repository\bin\Debug\netstandard2.0\ODDB.Core.Repository.dll
+C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB.Core.Repository\bin\Debug\netstandard2.0\ODDB.Core.Repository.pdb
+C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB.Core.Repository\obj\Debug\netstandard2.0\ODDB.Core.Repository.csprojAssemblyReference.cache
+C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB.Core.Repository\obj\Debug\netstandard2.0\ODDB.Core.Repository.AssemblyInfoInputs.cache
+C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB.Core.Repository\obj\Debug\netstandard2.0\ODDB.Core.Repository.AssemblyInfo.cs
+C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB.Core.Repository\obj\Debug\netstandard2.0\ODDB.Core.Repository.csproj.CoreCompileInputs.cache
+C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB.Core.Repository\obj\Debug\netstandard2.0\ODDB.Core.Repository.dll
+C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB.Core.Repository\obj\Debug\netstandard2.0\ODDB.Core.Repository.pdb

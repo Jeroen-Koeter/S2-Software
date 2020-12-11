@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jeroen\\source\\repos\\ODDB\\ODDB.Core.Repository\\ODDB.Core.Repository.csproj": {}
+    "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.Core.Repository\\ODDB.Core.Repository.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jeroen\\source\\repos\\ODDB\\ODDB.Core.Repository\\ODDB.Core.Repository.csproj": {
+    "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.Core.Repository\\ODDB.Core.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jeroen\\source\\repos\\ODDB\\ODDB.Core.Repository\\ODDB.Core.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.Core.Repository\\ODDB.Core.Repository.csproj",
         "projectName": "ODDB.Core.Repository",
-        "projectPath": "C:\\Users\\Jeroen\\source\\repos\\ODDB\\ODDB.Core.Repository\\ODDB.Core.Repository.csproj",
-        "packagesPath": "C:\\Users\\Jeroen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jeroen\\source\\repos\\ODDB\\ODDB.Core.Repository\\obj\\",
+        "projectPath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.Core.Repository\\ODDB.Core.Repository.csproj",
+        "packagesPath": "C:\\Users\\jeroe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.Core.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Jeroen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jeroe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,6 +40,10 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "dependencies": {
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.22, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
