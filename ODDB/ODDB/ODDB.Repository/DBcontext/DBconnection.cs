@@ -2,22 +2,18 @@
 using System.Collections.Generic;
 using MySql.Data.MySqlClient;
 using System.Text;
+using ODDB.BusinessLogic;
 
 namespace ODDB.Repository.DBcontext
 {
-    class DBconnection
+    public  class DBconnection
     {
-        private static string connetionString = @"Server=studmysql01.fhict.local;Uid=dbi435502; password=Falco5; Database=dbi435502;";
-        private MySqlConnection con = new MySqlConnection(connetionString);
 
-        public void OpenConnection() 
-        {
-            con.Open();
-        }
+        private static string connectionString = "Server = studmysql01.fhict.local; Uid=dbi435502;Database=dbi435502;Pwd=Falco5;";
 
-        public void CloseConnection() 
+        public string GetConnectionString() 
         {
-            con.Close();
+            return connectionString;
         }
 
     }

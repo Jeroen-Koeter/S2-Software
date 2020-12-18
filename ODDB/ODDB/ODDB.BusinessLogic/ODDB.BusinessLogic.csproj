@@ -5,8 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Factories\" />
-    <Folder Include="Models\" />
+    <Compile Remove="Factories\**" />
+    <Compile Remove="Models\**" />
+    <EmbeddedResource Remove="Factories\**" />
+    <EmbeddedResource Remove="Models\**" />
+    <None Remove="Factories\**" />
+    <None Remove="Models\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -14,8 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ODDB.Core.Repository\ODDB.Core.Repository.csproj" />
-    <ProjectReference Include="..\ODDB.Repository\ODDB.Repository.csproj" />
+    <ProjectReference Include="..\ODDB.Common\ODDB.Common.csproj" />
   </ItemGroup>
 
 </Project>

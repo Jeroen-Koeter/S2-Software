@@ -5,17 +5,22 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ODDB.Common\ODDB.Common.csproj" />
-    <ProjectReference Include="..\ODDB.Core.Repository\ODDB.Core.Repository.csproj" />
+    <Compile Remove="Entities\**" />
+    <Compile Remove="Interfaces\**" />
+    <EmbeddedResource Remove="Entities\**" />
+    <EmbeddedResource Remove="Interfaces\**" />
+    <None Remove="Entities\**" />
+    <None Remove="Interfaces\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Entities\" />
-    <Folder Include="Interfaces\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
     <PackageReference Include="MySql.Data" Version="8.0.22" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ODDB.BusinessLogic\ODDB.BusinessLogic.csproj" />
   </ItemGroup>
 
 </Project>

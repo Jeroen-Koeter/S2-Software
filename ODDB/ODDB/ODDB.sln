@@ -3,21 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ODDB", "ODDB\ODDB.csproj", "{85295BD3-B478-4819-AB59-562A250FB8C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ODDB.BusinessLogic", "ODDB.BusinessLogic\ODDB.BusinessLogic.csproj", "{E7DCABD4-B31E-47A4-87D7-D02A5CE47D14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ODDB.BusinessLogic", "ODDB.BusinessLogic\ODDB.BusinessLogic.csproj", "{E7DCABD4-B31E-47A4-87D7-D02A5CE47D14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ODDB.Repository", "ODDB.Repository\ODDB.Repository.csproj", "{8C63CA51-8E6A-45EF-932A-674CC992D0DB}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{46F9DE55-8E46-49FA-9302-E70FC9F16EF5}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ODDB.Core.Repository", "ODDB.Core.Repository\ODDB.Core.Repository.csproj", "{0A0B3E98-085F-4D91-B80C-7FF5B5E20B13}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ODDB.Repository", "ODDB.Repository\ODDB.Repository.csproj", "{8C63CA51-8E6A-45EF-932A-674CC992D0DB}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ODDB.Common", "ODDB.Common\ODDB.Common.csproj", "{2FAEE12F-EB12-4822-8E0B-E11C5625090F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ODDB.Common", "ODDB.Common\ODDB.Common.csproj", "{2FAEE12F-EB12-4822-8E0B-E11C5625090F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{11C900C6-B229-42E9-A403-FD2CFF1B377C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositoryTest", "RepositoryTest\RepositoryTest.csproj", "{79689322-BF26-4C0E-BA4D-D4A708806A11}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepositoryTest", "RepositoryTest\RepositoryTest.csproj", "{79689322-BF26-4C0E-BA4D-D4A708806A11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ODDB", "ODDB\ODDB.csproj", "{EB4687A2-1E0F-4BC1-895E-0B54FA4F518E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,18 +21,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{85295BD3-B478-4819-AB59-562A250FB8C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{85295BD3-B478-4819-AB59-562A250FB8C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{85295BD3-B478-4819-AB59-562A250FB8C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{85295BD3-B478-4819-AB59-562A250FB8C2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E7DCABD4-B31E-47A4-87D7-D02A5CE47D14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E7DCABD4-B31E-47A4-87D7-D02A5CE47D14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7DCABD4-B31E-47A4-87D7-D02A5CE47D14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7DCABD4-B31E-47A4-87D7-D02A5CE47D14}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0A0B3E98-085F-4D91-B80C-7FF5B5E20B13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0A0B3E98-085F-4D91-B80C-7FF5B5E20B13}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0A0B3E98-085F-4D91-B80C-7FF5B5E20B13}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0A0B3E98-085F-4D91-B80C-7FF5B5E20B13}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8C63CA51-8E6A-45EF-932A-674CC992D0DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8C63CA51-8E6A-45EF-932A-674CC992D0DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C63CA51-8E6A-45EF-932A-674CC992D0DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -49,12 +37,15 @@ Global
 		{79689322-BF26-4C0E-BA4D-D4A708806A11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79689322-BF26-4C0E-BA4D-D4A708806A11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79689322-BF26-4C0E-BA4D-D4A708806A11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB4687A2-1E0F-4BC1-895E-0B54FA4F518E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB4687A2-1E0F-4BC1-895E-0B54FA4F518E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB4687A2-1E0F-4BC1-895E-0B54FA4F518E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB4687A2-1E0F-4BC1-895E-0B54FA4F518E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{0A0B3E98-085F-4D91-B80C-7FF5B5E20B13} = {46F9DE55-8E46-49FA-9302-E70FC9F16EF5}
 		{79689322-BF26-4C0E-BA4D-D4A708806A11} = {11C900C6-B229-42E9-A403-FD2CFF1B377C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution

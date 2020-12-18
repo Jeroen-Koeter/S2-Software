@@ -11,8 +11,7 @@
         "dependencies": {
           "MySql.Data": "8.0.22",
           "NETStandard.Library": "2.0.3",
-          "ODDB.Core.Repository": "1.0.0",
-          "ODDB.Repository": "1.0.0"
+          "ODDB.Common": "1.0.0"
         },
         "runtime": {
           "ODDB.BusinessLogic.dll": {}
@@ -870,24 +869,6 @@
         "runtime": {
           "ODDB.Common.dll": {}
         }
-      },
-      "ODDB.Core.Repository/1.0.0": {
-        "dependencies": {
-          "MySql.Data": "8.0.22"
-        },
-        "runtime": {
-          "ODDB.Core.Repository.dll": {}
-        }
-      },
-      "ODDB.Repository/1.0.0": {
-        "dependencies": {
-          "MySql.Data": "8.0.22",
-          "ODDB.Common": "1.0.0",
-          "ODDB.Core.Repository": "1.0.0"
-        },
-        "runtime": {
-          "ODDB.Repository.dll": {}
-        }
       }
     }
   },
@@ -1388,16 +1369,6 @@
       "hashPath": "system.xml.xpath.xmldocument.4.0.1.nupkg.sha512"
     },
     "ODDB.Common/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "ODDB.Core.Repository/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "ODDB.Repository/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

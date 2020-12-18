@@ -1099,34 +1099,6 @@
         "runtime": {
           "bin/placeholder/ODDB.Common.dll": {}
         }
-      },
-      "ODDB.Core.Repository/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "MySql.Data": "8.0.22"
-        },
-        "compile": {
-          "bin/placeholder/ODDB.Core.Repository.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ODDB.Core.Repository.dll": {}
-        }
-      },
-      "ODDB.Repository/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "MySql.Data": "8.0.22",
-          "ODDB.Common": "1.0.0",
-          "ODDB.Core.Repository": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/ODDB.Repository.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ODDB.Repository.dll": {}
-        }
       }
     }
   },
@@ -4574,24 +4546,13 @@
       "type": "project",
       "path": "../ODDB.Common/ODDB.Common.csproj",
       "msbuildProject": "../ODDB.Common/ODDB.Common.csproj"
-    },
-    "ODDB.Core.Repository/1.0.0": {
-      "type": "project",
-      "path": "../ODDB.Core.Repository/ODDB.Core.Repository.csproj",
-      "msbuildProject": "../ODDB.Core.Repository/ODDB.Core.Repository.csproj"
-    },
-    "ODDB.Repository/1.0.0": {
-      "type": "project",
-      "path": "../ODDB.Repository/ODDB.Repository.csproj",
-      "msbuildProject": "../ODDB.Repository/ODDB.Repository.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "MySql.Data >= 8.0.22",
       "NETStandard.Library >= 2.0.3",
-      "ODDB.Core.Repository >= 1.0.0",
-      "ODDB.Repository >= 1.0.0"
+      "ODDB.Common >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4621,11 +4582,8 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "projectReferences": {
-            "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.Core.Repository\\ODDB.Core.Repository.csproj": {
-              "projectPath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.Core.Repository\\ODDB.Core.Repository.csproj"
-            },
-            "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.Repository\\ODDB.Repository.csproj": {
-              "projectPath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.Repository\\ODDB.Repository.csproj"
+            "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.Common\\ODDB.Common.csproj": {
+              "projectPath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.Common\\ODDB.Common.csproj"
             }
           }
         }

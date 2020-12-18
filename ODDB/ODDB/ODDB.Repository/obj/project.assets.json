@@ -92,6 +92,41 @@
           "lib/netstandard1.3/Microsoft.CSharp.dll": {}
         }
       },
+      "Microsoft.Extensions.Configuration.Abstractions/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "5.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Primitives/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.4",
+          "System.Runtime.CompilerServices.Unsafe": "5.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
+        }
+      },
       "Microsoft.NETCore.Platforms/1.1.0": {
         "type": "package",
         "compile": {
@@ -457,12 +492,12 @@
           "lib/netstandard1.6/System.Linq.Expressions.dll": {}
         }
       },
-      "System.Memory/4.5.3": {
+      "System.Memory/4.5.4": {
         "type": "package",
         "dependencies": {
-          "System.Buffers": "4.4.0",
+          "System.Buffers": "4.5.1",
           "System.Numerics.Vectors": "4.4.0",
-          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
         },
         "compile": {
           "lib/netstandard2.0/System.Memory.dll": {}
@@ -671,7 +706,7 @@
           "ref/netstandard1.5/System.Runtime.dll": {}
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+      "System.Runtime.CompilerServices.Unsafe/5.0.0": {
         "type": "package",
         "compile": {
           "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
@@ -1087,6 +1122,20 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
+      "ODDB.BusinessLogic/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MySql.Data": "8.0.22",
+          "ODDB.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ODDB.BusinessLogic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ODDB.BusinessLogic.dll": {}
+        }
+      },
       "ODDB.Common/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -1098,19 +1147,6 @@
         },
         "runtime": {
           "bin/placeholder/ODDB.Common.dll": {}
-        }
-      },
-      "ODDB.Core.Repository/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "MySql.Data": "8.0.22"
-        },
-        "compile": {
-          "bin/placeholder/ODDB.Core.Repository.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ODDB.Core.Repository.dll": {}
         }
       }
     }
@@ -1277,6 +1313,68 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.Abstractions/5.0.0": {
+      "sha512": "ETjSBHMp3OAZ4HxGQYpwyGsD8Sw5FegQXphi0rpoGMT74S4+I2mm7XJEswwn59XAaKOzC15oDSOWEE8SzDCd6Q==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.abstractions/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "lib/net461/Microsoft.Extensions.Configuration.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.xml",
+        "microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+        "microsoft.extensions.configuration.abstractions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
+      "sha512": "ORj7Zh81gC69TyvmcUm9tSzytcy8AVousi+IVRAI8nLieQjOFryRusSFh7+aLk16FN9pQNqJAiMd7BTKINK0kA==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.Primitives/5.0.0": {
+      "sha512": "cI/VWn9G1fghXrNDagX9nYaaB/nokkZn0HYAawGaELQrl8InSezfe9OnfPZLcJq3esXxygh3hkq2c3qoV3SDyQ==",
+      "type": "package",
+      "path": "microsoft.extensions.primitives/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Primitives.dll",
+        "lib/net461/Microsoft.Extensions.Primitives.xml",
+        "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll",
+        "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Primitives.xml",
+        "microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+        "microsoft.extensions.primitives.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
@@ -2454,22 +2552,24 @@
         "system.linq.expressions.nuspec"
       ]
     },
-    "System.Memory/4.5.3": {
-      "sha512": "3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
+    "System.Memory/4.5.4": {
+      "sha512": "1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
       "type": "package",
-      "path": "system.memory/4.5.3",
+      "path": "system.memory/4.5.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Memory.dll",
+        "lib/net461/System.Memory.xml",
         "lib/netcoreapp2.1/_._",
         "lib/netstandard1.1/System.Memory.dll",
         "lib/netstandard1.1/System.Memory.xml",
         "lib/netstandard2.0/System.Memory.dll",
         "lib/netstandard2.0/System.Memory.xml",
         "ref/netcoreapp2.1/_._",
-        "system.memory.4.5.3.nupkg.sha512",
+        "system.memory.4.5.4.nupkg.sha512",
         "system.memory.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -3243,26 +3343,33 @@
         "system.runtime.nuspec"
       ]
     },
-    "System.Runtime.CompilerServices.Unsafe/4.5.2": {
-      "sha512": "wprSFgext8cwqymChhrBLu62LMg/1u92bU+VOwyfBimSPVFXtsNqEWC92Pf9ofzJFlk4IHmJA75EDJn1b2goAQ==",
+    "System.Runtime.CompilerServices.Unsafe/5.0.0": {
+      "sha512": "ZD9TMpsmYJLrxbbmdvhwt9YEgG5WntEnZ/d1eH8JBX9LBp+Ju8BSBhUGbZMNVHHomWo2KVImJhTDl2hIgw/6MA==",
       "type": "package",
-      "path": "system.runtime.compilerservices.unsafe/4.5.2",
+      "path": "system.runtime.compilerservices.unsafe/5.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "lib/net45/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net45/System.Runtime.CompilerServices.Unsafe.xml",
         "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
         "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
         "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
         "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
         "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
         "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/net461/System.Runtime.CompilerServices.Unsafe.xml",
         "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
         "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
         "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
         "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+        "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
         "system.runtime.compilerservices.unsafe.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -4555,23 +4662,24 @@
         "system.xml.xpath.xmldocument.nuspec"
       ]
     },
+    "ODDB.BusinessLogic/1.0.0": {
+      "type": "project",
+      "path": "../ODDB.BusinessLogic/ODDB.BusinessLogic.csproj",
+      "msbuildProject": "../ODDB.BusinessLogic/ODDB.BusinessLogic.csproj"
+    },
     "ODDB.Common/1.0.0": {
       "type": "project",
       "path": "../ODDB.Common/ODDB.Common.csproj",
       "msbuildProject": "../ODDB.Common/ODDB.Common.csproj"
-    },
-    "ODDB.Core.Repository/1.0.0": {
-      "type": "project",
-      "path": "../ODDB.Core.Repository/ODDB.Core.Repository.csproj",
-      "msbuildProject": "../ODDB.Core.Repository/ODDB.Core.Repository.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "Microsoft.Extensions.Configuration.Abstractions >= 5.0.0",
+      "Microsoft.Extensions.DependencyInjection.Abstractions >= 5.0.0",
       "MySql.Data >= 8.0.22",
       "NETStandard.Library >= 2.0.3",
-      "ODDB.Common >= 1.0.0",
-      "ODDB.Core.Repository >= 1.0.0"
+      "ODDB.BusinessLogic >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4601,11 +4709,8 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "projectReferences": {
-            "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.Common\\ODDB.Common.csproj": {
-              "projectPath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.Common\\ODDB.Common.csproj"
-            },
-            "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.Core.Repository\\ODDB.Core.Repository.csproj": {
-              "projectPath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.Core.Repository\\ODDB.Core.Repository.csproj"
+            "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.BusinessLogic\\ODDB.BusinessLogic.csproj": {
+              "projectPath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.BusinessLogic\\ODDB.BusinessLogic.csproj"
             }
           }
         }
@@ -4620,6 +4725,14 @@
       "netstandard2.0": {
         "targetAlias": "netstandard2.0",
         "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": {
+            "target": "Package",
+            "version": "[5.0.0, )"
+          },
+          "Microsoft.Extensions.DependencyInjection.Abstractions": {
+            "target": "Package",
+            "version": "[5.0.0, )"
+          },
           "MySql.Data": {
             "target": "Package",
             "version": "[8.0.22, )"

@@ -4,14 +4,14 @@
     "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.Repository\\ODDB.Repository.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.Common\\ODDB.Common.csproj": {
+    "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.BusinessLogic\\ODDB.BusinessLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.Common\\ODDB.Common.csproj",
-        "projectName": "ODDB.Common",
-        "projectPath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.Common\\ODDB.Common.csproj",
+        "projectUniqueName": "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.BusinessLogic\\ODDB.BusinessLogic.csproj",
+        "projectName": "ODDB.BusinessLogic",
+        "projectPath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.BusinessLogic\\ODDB.BusinessLogic.csproj",
         "packagesPath": "C:\\Users\\jeroe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.Common\\obj\\",
+        "outputPath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.BusinessLogic\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jeroe\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,7 +27,11 @@
         "frameworks": {
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.Common\\ODDB.Common.csproj": {
+                "projectPath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.Common\\ODDB.Common.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -65,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.Core.Repository\\ODDB.Core.Repository.csproj": {
+    "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.Common\\ODDB.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.Core.Repository\\ODDB.Core.Repository.csproj",
-        "projectName": "ODDB.Core.Repository",
-        "projectPath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.Core.Repository\\ODDB.Core.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.Common\\ODDB.Common.csproj",
+        "projectName": "ODDB.Common",
+        "projectPath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.Common\\ODDB.Common.csproj",
         "packagesPath": "C:\\Users\\jeroe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.Core.Repository\\obj\\",
+        "outputPath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jeroe\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -150,11 +154,8 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.Common\\ODDB.Common.csproj": {
-                "projectPath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.Common\\ODDB.Common.csproj"
-              },
-              "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.Core.Repository\\ODDB.Core.Repository.csproj": {
-                "projectPath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.Core.Repository\\ODDB.Core.Repository.csproj"
+              "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.BusinessLogic\\ODDB.BusinessLogic.csproj": {
+                "projectPath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.BusinessLogic\\ODDB.BusinessLogic.csproj"
               }
             }
           }
@@ -169,6 +170,14 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "dependencies": {
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "MySql.Data": {
               "target": "Package",
               "version": "[8.0.22, )"
