@@ -27,7 +27,7 @@ namespace ODDB.Repository.Repositories
                 drank.DrankID = rdr.GetInt16(0);
                 drank.Naam = rdr.GetString(1);
                 drank.Type = rdr.GetString(2);
-                drank.omschrijving = rdr.GetString(3);
+                drank.Omschrijving = rdr.GetString(3);
                 drank.AlcoholPecentage = rdr.GetDouble(4);
                 DrankList.Add(drank);
             }

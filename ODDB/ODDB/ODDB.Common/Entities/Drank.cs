@@ -8,7 +8,7 @@ namespace ODDB.Common.Entities
     {
         public string Naam { get; set; }
         public string Type { get; set; }
-        public string omschrijving { get; set; }
+        public string Omschrijving { get; set; }
         public double AlcoholPecentage { get; set; }
         public int DrankID { get; set; }
 

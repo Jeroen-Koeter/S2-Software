@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Dynamic;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
@@ -20,7 +21,9 @@ namespace ODDB.Controllers
 
         public IActionResult Index() 
         {
-            return View();
+            dynamic model = new ExpandoObject();
+            model.Drank = _drankRepository.GetAll();
+            return View(model);
         }
         public List<Drank> GetAll()
         {

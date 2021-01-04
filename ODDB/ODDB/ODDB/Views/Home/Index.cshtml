@@ -1,10 +1,12 @@
-﻿@model DrankViewModel
+﻿@using ODDB.Common.Entities
+@model dynamic
 @{   
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+   <p><a href="/Drank">HTML tutorial</a></p>
+
 </div>
 <form asp-controller="Drank" asp-action="GetAll">
     <div class="form-group">
@@ -14,3 +16,4 @@
         <button tabindex="1" type="submit" id="kt_drank_submit" class="btn btn-primary font-weight-bolder font-size-h6 px-8 py-4 my-3 mr-3">Show All</button>
     </div>
 </form>
+

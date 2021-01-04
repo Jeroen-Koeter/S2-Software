@@ -1,0 +1,29 @@
+﻿@using ODDB.Common.Entities
+@model dynamic
+@{   
+}
+<html>
+    <body>
+        <div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="../Drank/index.cshtml">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<table style="width:100%">
+    <tr>
+        <th>Naam</th>
+        <th>Type</th>
+        <th>Omschrijving</th>
+        <th>Alcohol percentage</th>
+    </tr>
+    @foreach (Drank drank in Model.Drank)
+    {
+        <tr>
+            <td>@drank.Naam </td>
+            <td>@drank.Type </td>
+            <td>@drank.Omschrijving </td>
+            <td>@drank.AlcoholPecentage </td>
+        </tr>
+    }
+</table>
+    </body>
+</html>
