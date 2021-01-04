@@ -31,6 +31,7 @@ namespace ODDB.Repository.Repositories
                 drank.AlcoholPecentage = rdr.GetDouble(4);
                 DrankList.Add(drank);
             }
+            con.Close();
             return DrankList;
         }
 
@@ -41,7 +42,15 @@ namespace ODDB.Repository.Repositories
 
         void IDrankRepository.CreateDrank(Drank drank)
         {
-            throw new NotImplementedException();
+            con.Open();
+            string sql = $"INSERT INTO `drank`(`Naam`, `Type`, `Omschrijving`, `AlcoholPercentage`) VALUES (@naam,@type,@omschrijving,@alcoholpercentage)";
+            var cmd = new MySqlCommand(sql, con);
+            cmd.Parameters.AddWithValue("@naam", drank.Naam);
+            cmd.Parameters.AddWithValue("@type", drank.Type);
+            cmd.Parameters.AddWithValue("@omschrijving", drank.Omschrijving);
+            cmd.Parameters.AddWithValue("@alcoholpercentage", drank.AlcoholPecentage);
+            cmd.ExecuteNonQuery();
+            con.Close();
         }
     }
 }

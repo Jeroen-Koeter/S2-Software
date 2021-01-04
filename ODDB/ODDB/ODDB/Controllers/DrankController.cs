@@ -29,5 +29,21 @@ namespace ODDB.Controllers
         {
             return _drankRepository.GetAll();
         }
+        public IActionResult AddDrank()
+        {
+            return View();
+        }
+        public IActionResult CreateDrank(Drank drank) 
+        {
+            var Nieuwdrank = new Drank()
+            {
+                Naam = drank.Naam,
+                Type = drank.Type,
+                Omschrijving = drank.Omschrijving,
+                AlcoholPecentage=drank.AlcoholPecentage                
+            };
+            _drankRepository.CreateDrank(Nieuwdrank);
+            return RedirectToAction("Index");
+        }
     }
 }

@@ -14,7 +14,7 @@ namespace ODDB.Models
         [Required]
         public string Type { get; set; }
         [Required]
-        public string omschrijving { get; set; }
+        public string Omschrijving { get; set; }
         [Required]
         public double AlcoholPecentage { get; set; }
         [Required]
