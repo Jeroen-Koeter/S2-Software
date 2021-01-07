@@ -3,7 +3,9 @@
 }
 <html>
 <body>
-<form asp-controller="Drank" asp-action="CreateDrank">
+
+<form asp-controller="Drank" asp-action="UpdateDrank">
+<label asp-for="DrankID"></label>
   <label> Naam: </label>
 <input asp-for="Naam" tabindex="1" class="form-control form-control-solid h-auto py-6 px-6 rounded-lg" type="text"/>
   <label> Type:  </label>
@@ -12,7 +14,7 @@
 <input asp-for="Omschrijving" tabindex="1" class="form-control form-control-solid h-auto py-6 px-6 rounded-lg" type="text"/>
   <label> Alcohol percentage:  </label>
 <input asp-for="AlcoholPecentage" tabindex="1" class="form-control form-control-solid h-auto py-6 px-6 rounded-lg" type="double"/>   
- <button tabindex="1" type="submit" id="kt_drank_submit" class="btn btn-primary font-weight-bolder font-size-h6 px-8 py-4 my-3 mr-3">Voeg toe</button>
+ <button tabindex="1" type="submit" id="kt_drank_submit" class="btn btn-primary font-weight-bolder font-size-h6 px-8 py-4 my-3 mr-3">Update</button>
   </form>
 </body>
 </html>

@@ -1,0 +1,22 @@
+﻿ @using ODDB.Common.Entities
+@model dynamic
+@{   
+}
+
+<table style="width:100%">
+        <tr>
+            <th>Naam</th>
+            <th>Type</th>
+            <th>Omschrijving</th>
+            <th>Alcohol percentage</th>
+        </tr>
+        @foreach (Drank drank in Model.Drank)
+        {
+        <tr>
+            <td>@drank.Naam </td>
+            <td>@drank.Type </td>
+            <td>@drank.Omschrijving </td>
+            <td>@drank.AlcoholPecentage % </td>
+        </tr>
+        }
+    </table>

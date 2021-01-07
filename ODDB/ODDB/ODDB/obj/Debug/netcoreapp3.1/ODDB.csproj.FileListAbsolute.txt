@@ -60,3 +60,8 @@ C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB\obj\Debug\netcoreapp3.1\ODDB.p
 C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB\obj\Debug\netcoreapp3.1\ODDB.genruntimeconfig.cache
 C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB\obj\Debug\netcoreapp3.1\Razor\Views\Drank\Index.cshtml.g.cs
 C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB\obj\Debug\netcoreapp3.1\Razor\Views\Drank\AddDrank.cshtml.g.cs
+C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB\obj\Debug\netcoreapp3.1\Razor\Views\Drank\ZoekDrank.cshtml.g.cs
+C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB\obj\Debug\netcoreapp3.1\Razor\Views\Drank\Result.cshtml.g.cs
+C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB\obj\Debug\netcoreapp3.1\Razor\Views\Account\Index.cshtml.g.cs
+C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB\obj\Debug\netcoreapp3.1\Razor\Views\BucketList\Index.cshtml.g.cs
+C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB\obj\Debug\netcoreapp3.1\Razor\Views\Drank\Update.cshtml.g.cs

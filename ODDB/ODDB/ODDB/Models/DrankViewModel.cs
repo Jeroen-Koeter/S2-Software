@@ -19,5 +19,9 @@ namespace ODDB.Models
         public double AlcoholPecentage { get; set; }
         [Required]
         public int DrankID { get; set; }
+        [Required]
+        public string Attribute { get; set; }
+        [Required]
+        public string Data { get; set; }
     }
 }

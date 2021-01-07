@@ -25,14 +25,17 @@ namespace ODDB.Controllers
             model.Drank = _drankRepository.GetAll();
             return View(model);
         }
-        public List<Drank> GetAll()
-        {
-            return _drankRepository.GetAll();
-        }
+
         public IActionResult AddDrank()
         {
             return View();
         }
+
+        public IActionResult ZoekDrank() 
+        {
+            return View();
+        }
+
         public IActionResult CreateDrank(Drank drank) 
         {
             var Nieuwdrank = new Drank()
@@ -44,6 +47,28 @@ namespace ODDB.Controllers
             };
             _drankRepository.CreateDrank(Nieuwdrank);
             return RedirectToAction("Index");
+        }
+
+        public IActionResult GetDrankByAttribute(string Attribute, string data)
+        {
+            dynamic model = new ExpandoObject();
+            model.Drank = _drankRepository.GetDrankByAttribute(Attribute, data);
+            return View("Result",model);
+        }
+
+        public IActionResult Delete(int DrankID)
+        {
+            _drankRepository.DeleteDrank(DrankID);
+            return RedirectToAction("Index");
+        }
+        public IActionResult Update(int DrankID) 
+        {
+            return View("update", DrankID);
+        }
+
+        public IActionResult UpdateDrank(Drank drank) 
+        {
+            return;
         }
     }
 }

@@ -1,0 +1,15 @@
+﻿@model DrankViewModel 
+@{
+}
+
+<form asp-controller="Drank" asp-action="GetDrankByAttribute">
+    <label>Waarop wil je zoeken?:</label>
+  <select asp-for="Attribute">
+    <option value="Naam">Naam</option>
+    <option value="Type">Type</option>
+    <option value="AlcoholPercentage">Alcohol percentage</option>
+  </select>
+  <label>Wat zoek je? </label>
+<input asp-for="Data" tabindex="1" class="form-control form-control-solid h-auto py-6 px-6 rounded-lg" type="string"/>   
+ <button tabindex="1" type="submit" id="kt_drank_submit" class="btn btn-primary font-weight-bolder font-size-h6 px-8 py-4 my-3 mr-3">Zoek</button>
+</form>

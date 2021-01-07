@@ -1,31 +1,40 @@
 ﻿@using ODDB.Common.Entities
 @model dynamic
-@{   
+@{
 }
 <html>
-    <body>
+<body>
     <p>
-    <a asp-controller="Drank" asp-action="AddDrank">
-        <button class="btn btn-primary font-weight-bolder font-size-h6 px-8 py-4 my-3 mr-3">Voeg drank toe</button>
-    </a>
-</p>
-</div>
-<table style="width:100%">
-    <tr>
-        <th>Naam</th>
-        <th>Type</th>
-        <th>Omschrijving</th>
-        <th>Alcohol percentage</th>
-    </tr>
-    @foreach (Drank drank in Model.Drank)
-    {
+        <a asp-controller="Drank" asp-action="AddDrank">
+            <button class="btn btn-primary font-weight-bolder font-size-h6 px-8 py-4 my-3 mr-3">Voeg drank toe</button>
+        </a>
+        <a asp-controller="Drank" asp-action="ZoekDrank">
+            <button class="btn btn-primary font-weight-bolder font-size-h6 px-8 py-4 my-3 mr-3">Zoek een drankje op</button>
+        </a>
+
+    </p>
+
+    <table style="width:100%">
+        <tr>
+            <th>Naam</th>
+            <th>Type</th>
+            <th>Omschrijving</th>
+            <th>Alcohol percentage</th>
+        </tr>
+        @foreach (Drank drank in Model.Drank)
+        {
         <tr>
             <td>@drank.Naam </td>
             <td>@drank.Type </td>
             <td>@drank.Omschrijving </td>
-            <td>@drank.AlcoholPecentage </td>
+            <td>@drank.AlcoholPecentage % </td>
+            <td>
+                <a asp-controller="Drank" asp-action="Delete" asp-route-DrankID="@drank.DrankID">
+                    <button class="btn btn-primary font-weight-bolder font-size-h6 px-8 py-4 my-3 mr-3">Delete</button>
+                </a>
+            </td>
         </tr>
-    }
-</table>
-    </body>
+        }
+    </table>
+</body>
 </html>
