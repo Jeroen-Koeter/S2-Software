@@ -8,9 +8,11 @@ namespace ODDB.BusinessLogic.Interfaces
 {
     public interface IBucketListRepository
     {
-        Task<Drank> AddDrank(Drank drank);
+        void AddDrank(int BucketlistID, int DrankID);
         Task DeleteDrank(Drank drank);
         void CreateBucketList(string Naam, string UserID);
         List<Bucketlist> GetBucketlistsByUser(string UserID);
+        List<Drank> GetDrankFromBucketlist(int BucketlistID);
+        List<Drank> GetNotInBucketlist(int BucketListID);
     }
 }

@@ -24,9 +24,15 @@ namespace ODDB.Repository.Repositories
             con.Close();
         }
 
-        public Task<Drank> AddDrank(Drank drank)
+        public void AddDrank(int BucketlistID, int DrankID)
         {
-            throw new NotImplementedException();
+            con.Open();
+            string sql = "INSERT INTO `buckelistentry`(`BucketListID`, `DrankID`) VALUES (@bucketlistID,@drankID)";
+            var cmd = new MySqlCommand(sql, con);
+            cmd.Parameters.AddWithValue("@bucketlistID", BucketlistID);
+            cmd.Parameters.AddWithValue("@drankID", DrankID);
+            cmd.ExecuteNonQuery();
+            con.Close();
         }
 
         public Task DeleteDrank(Drank drank)
@@ -52,6 +58,46 @@ namespace ODDB.Repository.Repositories
             }
             con.Close();
             return Bucketlists;
+        }
+        public List<Drank> GetDrankFromBucketlist(int BucketlistID) 
+        {
+            con.Open();
+            string sql = "SELECT drank.Naam , drank.Type, drank.Omschrijving, drank.AlcoholPercentage FROM Drank, buckelistentry WHERE buckelistentry.DrankID = drank.DrankID and buckelistentry.BucketListID = @bucketlistID";
+            var cmd = new MySqlCommand(sql, con);
+            cmd.Parameters.AddWithValue("@bucketlistID", BucketlistID);
+            MySqlDataReader rdr = cmd.ExecuteReader();
+            List<Drank> DrankList = new List<Drank>();
+            while (rdr.Read())
+            {
+                Drank drank = new Drank();
+                drank.Naam = rdr.GetString(0);
+                drank.Type = rdr.GetString(1);
+                drank.Omschrijving = rdr.GetString(2);
+                drank.AlcoholPecentage = rdr.GetDouble(3);
+                DrankList.Add(drank);
+            }
+            con.Close();
+            return DrankList;
+        }
+        public List<Drank> GetNotInBucketlist(int BucketListID) 
+        {
+            con.Open();
+            string sql = "SELECT drank.Naam , drank.Type, drank.Omschrijving, drank.AlcoholPercentage FROM Drank where drank.DrankID not in (select drank.DrankID FROM drank, buckelistentry WHERE buckelistentry.DrankID = drank.DrankID and buckelistentry.BucketListID = @bucketlistID) ";
+            var cmd = new MySqlCommand(sql, con);
+            cmd.Parameters.AddWithValue("@bucketlistID", BucketListID);
+            MySqlDataReader rdr = cmd.ExecuteReader();
+            List<Drank> DrankList = new List<Drank>();
+            while (rdr.Read())
+            {
+                Drank drank = new Drank();
+                drank.Naam = rdr.GetString(0);
+                drank.Type = rdr.GetString(1);
+                drank.Omschrijving = rdr.GetString(2);
+                drank.AlcoholPecentage = rdr.GetDouble(3);
+                DrankList.Add(drank);
+            }
+            con.Close();
+            return DrankList;
         }
     }
 }

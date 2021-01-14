@@ -1,4 +1,4 @@
-﻿@using ODDB.Common.Entities;
+﻿@using ODDB.Common.Entities
 @model BucketListViewModel
 
  <table style="width:100%">
@@ -15,11 +15,6 @@
             <td>@drank.Type </td>
             <td>@drank.Omschrijving </td>
             <td>@drank.AlcoholPecentage % </td>
-            <td>
-                <a asp-controller="BucketList" asp-action="AddDrankToBucketlist" asp-route-DrankID="@drank.DrankID" asp-route-BucketlistID="@Model.BucketListID">
-                    <button class="btn btn-primary font-weight-bolder font-size-h6 px-8 py-4 my-3 mr-3">Add</button>
-                </a>
-            </td>
         </tr>
         }
     </table>

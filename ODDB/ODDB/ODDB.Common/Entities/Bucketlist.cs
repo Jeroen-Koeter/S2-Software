@@ -9,6 +9,6 @@ namespace ODDB.Common.Entities
         public string Naam { get; set; }
         public Guid Eignenaar { get; set; }
         public int BucketListId { get; set; }
-        public List<User> Volgers { get; set; }
+        public List<Drank> Drankjes { get; set; }
     }
 }

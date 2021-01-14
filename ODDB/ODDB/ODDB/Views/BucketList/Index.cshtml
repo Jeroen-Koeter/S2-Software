@@ -15,10 +15,15 @@
         @foreach (Bucketlist bucketlist in Model.Bucketlist)
         {
         <tr>
-            <td>@bucketlist.Naam </td>
+            <td style="font-weight: bold; font-size: 150%;">@bucketlist.Naam </td>
+            <td>
+                <a asp-controller="Bucketlist" asp-action="Show" asp-route-BucketlistID="@bucketlist.BucketListId">
+                    <button class="btn btn-primary font-weight-bolder font-size-h6 px-8 py-4 my-3 mr-3">Show bucketlist</button>
+                </a>
+            </td>
             <td>
                 <a asp-controller="Bucketlist" asp-action="AddDrank" asp-route-BucketlistID="@bucketlist.BucketListId">
-                    <button class="btn btn-primary font-weight-bolder font-size-h6 px-8 py-4 my-3 mr-3">Delete</button>
+                    <button class="btn btn-primary font-weight-bolder font-size-h6 px-8 py-4 my-3 mr-3">Edit bucketlist</button>
                 </a>
             </td>
         </tr>

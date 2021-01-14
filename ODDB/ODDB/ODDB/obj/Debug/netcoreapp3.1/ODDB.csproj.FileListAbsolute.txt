@@ -69,3 +69,4 @@ C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB\obj\Debug\netcoreapp3.1\Razor\
 C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
 C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB\obj\Debug\netcoreapp3.1\Razor\Views\BucketList\Create.cshtml.g.cs
 C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB\obj\Debug\netcoreapp3.1\Razor\Views\BucketList\AddDrank.cshtml.g.cs
+C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB\obj\Debug\netcoreapp3.1\Razor\Views\BucketList\Show.cshtml.g.cs
