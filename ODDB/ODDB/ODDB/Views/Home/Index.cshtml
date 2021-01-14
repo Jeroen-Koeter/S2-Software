@@ -1,10 +1,15 @@
 ﻿@using ODDB.Common.Entities
 @model dynamic
-@{   
+@{
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome bij ODDB</h1>
-  <p>Gebruik de Balk hierboven om de pagina te ontdekken!</p>
+    <p>Gebruik de Balk hierboven om de pagina te ontdekken!</p>
 </div>
-
+<a asp-controller="Account" asp-action="Login">
+    <button class="btn btn-primary font-weight-bolder font-size-h6 px-8 py-4 my-3 mr-3">Login</button>
+</a>
+<a asp-controller="Account" asp-action="Register">
+    <button class="btn btn-primary font-weight-bolder font-size-h6 px-8 py-4 my-3 mr-3">Register</button>
+</a>

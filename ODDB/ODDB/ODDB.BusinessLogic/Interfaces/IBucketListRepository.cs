@@ -10,5 +10,7 @@ namespace ODDB.BusinessLogic.Interfaces
     {
         Task<Drank> AddDrank(Drank drank);
         Task DeleteDrank(Drank drank);
+        void CreateBucketList(string Naam, string UserID);
+        List<Bucketlist> GetBucketlistsByUser(string UserID);
     }
 }

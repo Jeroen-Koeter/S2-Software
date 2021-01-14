@@ -66,9 +66,9 @@ namespace ODDB.Controllers
             return View("update", DrankID);
         }
 
-        public IActionResult UpdateDrank(Drank drank) 
-        {
-            return;
-        }
+      //  public IActionResult UpdateDrank(Drank drank) 
+        //{
+        //    return;
+        //}
     }
 }

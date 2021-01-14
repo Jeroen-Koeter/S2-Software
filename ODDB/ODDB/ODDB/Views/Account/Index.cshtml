@@ -1,6 +1,10 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@using System.Security.Claims
 @{
 }
-Dit word de Account pagina
+
+<h2 class="display-4">Welkom, @User.Claims.First(c => c.Type == ClaimTypes.Name).Value</h2>
+<p>Go to your Bucketlists:</p>
+<a asp-controller="BucketList" asp-action="Index" asp-route-UserID="@User.Claims.First(c => c.Type == ClaimTypes.NameIdentifier).Value">
+    <button class="btn btn-primary font-weight-bolder font-size-h6 px-8 py-4 my-3 mr-3">Bucketlists</button>
+</a>
+ 

@@ -1,6 +1,27 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@using System.Security.Claims, 
+@using ODDB.Common.Entities
+@model dynamic
 @{
 }
-Dit word de Bucketlist pagina
+
+ <h2 class="display-4">Dit zijn de bucketlists van @User.Claims.First(c => c.Type == ClaimTypes.Name).Value</h2>
+  <a asp-controller="BucketList" asp-action="Create">
+    <button class="btn btn-primary font-weight-bolder font-size-h6 px-8 py-4 my-3 mr-3">Maak een BucketList</button>
+</a>
+ <table style="width:100%">
+        <tr>
+            <th>Naam</th>
+        </tr>
+        @foreach (Bucketlist bucketlist in Model.Bucketlist)
+        {
+        <tr>
+            <td>@bucketlist.Naam </td>
+            <td>
+                <a asp-controller="Bucketlist" asp-action="AddDrank" asp-route-BucketlistID="@bucketlist.BucketListId">
+                    <button class="btn btn-primary font-weight-bolder font-size-h6 px-8 py-4 my-3 mr-3">Delete</button>
+                </a>
+            </td>
+        </tr>
+        }
+    </table>
+

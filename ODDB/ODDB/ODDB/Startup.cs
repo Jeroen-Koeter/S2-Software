@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Builder;
+    using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
@@ -9,6 +9,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ODDB.Repository;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Http;
 
 namespace ODDB
 {
@@ -24,6 +26,17 @@ namespace ODDB
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+                .AddCookie(options =>
+                {
+                    options.Cookie.HttpOnly = true;
+                    options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
+                    options.Cookie.SameSite = SameSiteMode.Lax;
+                    options.Cookie.Name = "AuthenticationExample.AuthCookieAspNetCore";
+                    options.LoginPath = "/user/login";
+                    options.LogoutPath = "/user/logout";
+                });
+
             services.AddControllersWithViews();
             services.AddRepositories(Configuration);
         }
@@ -47,7 +60,8 @@ namespace ODDB
             app.UseRouting();
 
             app.UseAuthorization();
-
+            app.UseCookiePolicy();
+            app.UseAuthentication();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(

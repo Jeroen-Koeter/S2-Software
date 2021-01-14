@@ -14,6 +14,8 @@ namespace ODDB.Repository
            IConfiguration configuration)
         {
             services.AddTransient<IDrankRepository, DrankRepository>();
+            services.AddTransient<IAccountRepository, AccountRepository>();
+            services.AddTransient<IBucketListRepository, BucketListRepository>();
             return services;
         }
     }

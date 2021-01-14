@@ -28,11 +28,14 @@
             <td>@drank.Type </td>
             <td>@drank.Omschrijving </td>
             <td>@drank.AlcoholPecentage % </td>
+             @if (User.Identity.IsAuthenticated)
+                {
             <td>
                 <a asp-controller="Drank" asp-action="Delete" asp-route-DrankID="@drank.DrankID">
                     <button class="btn btn-primary font-weight-bolder font-size-h6 px-8 py-4 my-3 mr-3">Delete</button>
                 </a>
             </td>
+            }
         </tr>
         }
     </table>
