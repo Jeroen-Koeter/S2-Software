@@ -4,12 +4,12 @@
     "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB\\ODDB.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.BusinessLogic\\ODDB.BusinessLogic.csproj": {
+    "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.BusinessLogic\\ODDB.Interfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.BusinessLogic\\ODDB.BusinessLogic.csproj",
-        "projectName": "ODDB.BusinessLogic",
-        "projectPath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.BusinessLogic\\ODDB.BusinessLogic.csproj",
+        "projectUniqueName": "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.BusinessLogic\\ODDB.Interfaces.csproj",
+        "projectName": "ODDB.Interfaces",
+        "projectPath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.BusinessLogic\\ODDB.Interfaces.csproj",
         "packagesPath": "C:\\Users\\jeroe\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.BusinessLogic\\obj\\",
         "projectStyle": "PackageReference",
@@ -154,8 +154,8 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.BusinessLogic\\ODDB.BusinessLogic.csproj": {
-                "projectPath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.BusinessLogic\\ODDB.BusinessLogic.csproj"
+              "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.BusinessLogic\\ODDB.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.BusinessLogic\\ODDB.Interfaces.csproj"
               }
             }
           }
@@ -227,8 +227,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.BusinessLogic\\ODDB.BusinessLogic.csproj": {
-                "projectPath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.BusinessLogic\\ODDB.BusinessLogic.csproj"
+              "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.BusinessLogic\\ODDB.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.BusinessLogic\\ODDB.Interfaces.csproj"
               },
               "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.Repository\\ODDB.Repository.csproj": {
                 "projectPath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.Repository\\ODDB.Repository.csproj"

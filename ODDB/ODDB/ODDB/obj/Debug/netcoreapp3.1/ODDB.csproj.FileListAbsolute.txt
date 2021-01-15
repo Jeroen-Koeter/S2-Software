@@ -25,10 +25,8 @@ C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB\bin\Debug\netcoreapp3.1\System
 C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
 C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB\bin\Debug\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll
 C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB\bin\Debug\netcoreapp3.1\ODDB.BusinessLogic.dll
 C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB\bin\Debug\netcoreapp3.1\ODDB.Common.dll
 C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB\bin\Debug\netcoreapp3.1\ODDB.Repository.dll
-C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB\bin\Debug\netcoreapp3.1\ODDB.BusinessLogic.pdb
 C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB\bin\Debug\netcoreapp3.1\ODDB.Repository.pdb
 C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB\bin\Debug\netcoreapp3.1\ODDB.Common.pdb
 C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB\obj\Debug\netcoreapp3.1\ODDB.csprojAssemblyReference.cache
@@ -70,3 +68,7 @@ C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB\obj\Debug\netcoreapp3.1\Razor\
 C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB\obj\Debug\netcoreapp3.1\Razor\Views\BucketList\Create.cshtml.g.cs
 C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB\obj\Debug\netcoreapp3.1\Razor\Views\BucketList\AddDrank.cshtml.g.cs
 C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB\obj\Debug\netcoreapp3.1\Razor\Views\BucketList\Show.cshtml.g.cs
+C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB\obj\Debug\netcoreapp3.1\Razor\Views\Home\error.cshtml.g.cs
+C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB\bin\Debug\netcoreapp3.1\ODDB.Repository.dll.config
+C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB\bin\Debug\netcoreapp3.1\ODDB.Interfaces.dll
+C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB\bin\Debug\netcoreapp3.1\ODDB.Interfaces.pdb

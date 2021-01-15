@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ODDB.BusinessLogic\ODDB.BusinessLogic.csproj" />
+    <ProjectReference Include="..\ODDB.BusinessLogic\ODDB.Interfaces.csproj" />
     <ProjectReference Include="..\ODDB.Repository\ODDB.Repository.csproj" />
   </ItemGroup>
 

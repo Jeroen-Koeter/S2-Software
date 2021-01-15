@@ -1,0 +1,12 @@
+C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB.BusinessLogic\bin\Debug\netstandard2.0\ODDB.Interfaces.deps.json
+C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB.BusinessLogic\bin\Debug\netstandard2.0\ODDB.Interfaces.dll
+C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB.BusinessLogic\bin\Debug\netstandard2.0\ODDB.Interfaces.pdb
+C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB.BusinessLogic\bin\Debug\netstandard2.0\ODDB.Common.dll
+C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB.BusinessLogic\bin\Debug\netstandard2.0\ODDB.Common.pdb
+C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB.BusinessLogic\obj\Debug\netstandard2.0\ODDB.Interfaces.csprojAssemblyReference.cache
+C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB.BusinessLogic\obj\Debug\netstandard2.0\ODDB.Interfaces.AssemblyInfoInputs.cache
+C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB.BusinessLogic\obj\Debug\netstandard2.0\ODDB.Interfaces.AssemblyInfo.cs
+C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB.BusinessLogic\obj\Debug\netstandard2.0\ODDB.Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB.BusinessLogic\obj\Debug\netstandard2.0\ODDB.Interfaces.csproj.CopyComplete
+C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB.BusinessLogic\obj\Debug\netstandard2.0\ODDB.Interfaces.dll
+C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB.BusinessLogic\obj\Debug\netstandard2.0\ODDB.Interfaces.pdb

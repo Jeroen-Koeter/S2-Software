@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ODDB.BusinessLogic\ODDB.BusinessLogic.csproj" />
+    <ProjectReference Include="..\ODDB.BusinessLogic\ODDB.Interfaces.csproj" />
   </ItemGroup>
 
 </Project>

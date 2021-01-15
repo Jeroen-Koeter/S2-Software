@@ -23,6 +23,10 @@ namespace ODDB.Controllers
         {
             dynamic model = new ExpandoObject();
             model.Drank = _drankRepository.GetAll();
+            if (model.Drank == null)
+            {
+                return LocalRedirect("/Home/error");
+            }
             return View(model);
         }
 
@@ -53,6 +57,10 @@ namespace ODDB.Controllers
         {
             dynamic model = new ExpandoObject();
             model.Drank = _drankRepository.GetDrankByAttribute(Attribute, data);
+            if (model.Drank == null)
+            {
+                return LocalRedirect("/Home/error");
+            }
             return View("Result",model);
         }
 

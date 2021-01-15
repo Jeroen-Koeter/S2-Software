@@ -5,9 +5,12 @@
 <html>
 <body>
     <p>
+        @if (User.Identity.IsAuthenticated)
+                {
         <a asp-controller="Drank" asp-action="AddDrank">
             <button class="btn btn-primary font-weight-bolder font-size-h6 px-8 py-4 my-3 mr-3">Voeg drank toe</button>
         </a>
+        }
         <a asp-controller="Drank" asp-action="ZoekDrank">
             <button class="btn btn-primary font-weight-bolder font-size-h6 px-8 py-4 my-3 mr-3">Zoek een drankje op</button>
         </a>

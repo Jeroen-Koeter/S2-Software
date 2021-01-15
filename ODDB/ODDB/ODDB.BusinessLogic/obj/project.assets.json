@@ -4561,9 +4561,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.BusinessLogic\\ODDB.BusinessLogic.csproj",
-      "projectName": "ODDB.BusinessLogic",
-      "projectPath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.BusinessLogic\\ODDB.BusinessLogic.csproj",
+      "projectUniqueName": "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.BusinessLogic\\ODDB.Interfaces.csproj",
+      "projectName": "ODDB.Interfaces",
+      "projectPath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.BusinessLogic\\ODDB.Interfaces.csproj",
       "packagesPath": "C:\\Users\\jeroe\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.BusinessLogic\\obj\\",
       "projectStyle": "PackageReference",

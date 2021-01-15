@@ -18,10 +18,5 @@ namespace ODDB.Repository.Repositories
         {
             throw new NotImplementedException();
         }
-
-        public Task<Bucketlist> MakeBucketList(Drank drank)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

@@ -1,15 +1,36 @@
-﻿@using ODDB.Common.Entities
+﻿@using System.Security.Claims
 @model dynamic
 @{
 }
+<style>
+.center {
+  line-height: 200px;
+  height: 200px;
 
+  text-align: center;
+}
+
+.center button {
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+</style>
 <div class="text-center">
     <h1 class="display-4">Welcome bij ODDB</h1>
     <p>Gebruik de Balk hierboven om de pagina te ontdekken!</p>
 </div>
-<a asp-controller="Account" asp-action="Login">
-    <button class="btn btn-primary font-weight-bolder font-size-h6 px-8 py-4 my-3 mr-3">Login</button>
-</a>
-<a asp-controller="Account" asp-action="Register">
-    <button class="btn btn-primary font-weight-bolder font-size-h6 px-8 py-4 my-3 mr-3">Register</button>
-</a>
+@if (!User.Identity.IsAuthenticated)
+{
+<div class="center">
+    <a asp-controller="Account" asp-action="Login">
+        <button class="btn btn-primary font-weight-bolder font-size-h6 px-8 py-4 my-3 mr-3">Login</button>
+    </a>
+    </div>
+    <div class="center">
+    <a asp-controller="Account" asp-action="Register">
+        <button class="btn btn-primary font-weight-bolder font-size-h6 px-8 py-4 my-3 mr-3">Register</button>
+    </a>
+    </div>
+
+}

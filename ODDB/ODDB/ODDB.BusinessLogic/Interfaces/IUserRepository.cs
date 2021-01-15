@@ -8,7 +8,6 @@ namespace ODDB.BusinessLogic.Interfaces
 {
     public interface IUserRepository 
     {
-        Task<Bucketlist> MakeBucketList(Drank drank);
         Task DeleteBucketList(Bucketlist bucketlist);
         Task<User> ChangePassword(string CurrentPassword, string NewPassword);
     }

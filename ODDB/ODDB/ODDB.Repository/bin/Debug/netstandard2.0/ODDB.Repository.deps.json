@@ -13,7 +13,7 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
           "MySql.Data": "8.0.22",
           "NETStandard.Library": "2.0.3",
-          "ODDB.BusinessLogic": "1.0.0"
+          "ODDB.Interfaces": "1.0.0"
         },
         "runtime": {
           "ODDB.Repository.dll": {}
@@ -896,21 +896,21 @@
           }
         }
       },
-      "ODDB.BusinessLogic/1.0.0": {
-        "dependencies": {
-          "MySql.Data": "8.0.22",
-          "ODDB.Common": "1.0.0"
-        },
-        "runtime": {
-          "ODDB.BusinessLogic.dll": {}
-        }
-      },
       "ODDB.Common/1.0.0": {
         "dependencies": {
           "MySql.Data": "8.0.22"
         },
         "runtime": {
           "ODDB.Common.dll": {}
+        }
+      },
+      "ODDB.Interfaces/1.0.0": {
+        "dependencies": {
+          "MySql.Data": "8.0.22",
+          "ODDB.Common": "1.0.0"
+        },
+        "runtime": {
+          "ODDB.Interfaces.dll": {}
         }
       }
     }
@@ -1432,12 +1432,12 @@
       "path": "system.xml.xpath.xmldocument/4.0.1",
       "hashPath": "system.xml.xpath.xmldocument.4.0.1.nupkg.sha512"
     },
-    "ODDB.BusinessLogic/1.0.0": {
+    "ODDB.Common/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "ODDB.Common/1.0.0": {
+    "ODDB.Interfaces/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

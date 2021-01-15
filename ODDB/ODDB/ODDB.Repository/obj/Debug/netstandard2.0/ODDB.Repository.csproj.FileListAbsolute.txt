@@ -10,5 +10,6 @@ C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB.Repository\bin\Debug\netstanda
 C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB.Repository\obj\Debug\netstandard2.0\ODDB.Repository.csproj.CopyComplete
 C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB.Repository\obj\Debug\netstandard2.0\ODDB.Repository.dll
 C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB.Repository\obj\Debug\netstandard2.0\ODDB.Repository.pdb
-C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB.Repository\bin\Debug\netstandard2.0\ODDB.BusinessLogic.dll
-C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB.Repository\bin\Debug\netstandard2.0\ODDB.BusinessLogic.pdb
+C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB.Repository\bin\Debug\netstandard2.0\ODDB.Repository.dll.config
+C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB.Repository\bin\Debug\netstandard2.0\ODDB.Interfaces.dll
+C:\Users\jeroe\Desktop\S2-Software\ODDB\ODDB\ODDB.Repository\bin\Debug\netstandard2.0\ODDB.Interfaces.pdb

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nfwsLr1iN1E3NMDAw72y+ok7wnmNOc04yv4Q+sVWvfWkiVfHMU4cIwp7zy8CRz7wTUrGLpS8xELcfzuvfEEbxQ==",
+  "dgSpecHash": "G8GYfF5XZAtc2V0ueSFIHYIQ04XxKk5DOCi+E05+62kdcgBUXfPZFBCuQ59EV5I6/2TDNQ1YB2Qabgw5vAgPCw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.BusinessLogic\\ODDB.BusinessLogic.csproj",
+  "projectFilePath": "C:\\Users\\jeroe\\Desktop\\S2-Software\\ODDB\\ODDB\\ODDB.BusinessLogic\\ODDB.Interfaces.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jeroe\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",
     "C:\\Users\\jeroe\\.nuget\\packages\\google.protobuf\\3.11.4\\google.protobuf.3.11.4.nupkg.sha512",

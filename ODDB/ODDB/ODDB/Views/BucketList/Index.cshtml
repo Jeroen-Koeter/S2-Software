@@ -26,6 +26,11 @@
                     <button class="btn btn-primary font-weight-bolder font-size-h6 px-8 py-4 my-3 mr-3">Edit bucketlist</button>
                 </a>
             </td>
+            <td>
+                <a asp-controller="Bucketlist" asp-action="Delete" asp-route-BucketlistID="@bucketlist.BucketListId" asp-route-UserID="@User.Claims.First(c => c.Type == ClaimTypes.NameIdentifier).Value">
+                    <button class="btn btn-primary font-weight-bolder font-size-h6 px-8 py-4 my-3 mr-3">Delete</button>
+                </a>
+            </td>
         </tr>
         }
     </table>
