@@ -38,7 +38,7 @@ namespace ODDB.Controllers
         public IActionResult CreateBucketList(string Naam, string UserID)
         {
             _bucketListRepository.CreateBucketList(Naam, UserID);
-            return RedirectToAction("Create");
+            return LocalRedirect($"/BucketList?UserID={UserID}");
         }
 
         public IActionResult AddDrank(BucketListViewModel model)
@@ -70,10 +70,10 @@ namespace ODDB.Controllers
         }
         public IActionResult Delete(BucketListViewModel model, Guid UserID) 
         {
-            
+            string Userid = UserID.ToString();
             _bucketListRepository.Deletebucketlist(model.BucketListID);
             _bucketListRepository.Deletebucketlistentry(model.BucketListID);
-            return LocalRedirect("/Home/Index");
+            return LocalRedirect($"/BucketList?UserID={Userid}");
         }
     }
 }
